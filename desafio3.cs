@@ -1,0 +1,22 @@
+public class Desafio3 : MonoBehaviour
+{
+    public string letra;
+
+    void Start()
+    {
+        if(letra == "a" || letra == "e" ||letra == "i" || letra == "o" || letra == "u")
+        {
+            Debug.Log(letra + " é uma vogal!");
+        }
+        else
+        {
+            Debug.Log(letra + " é uma consoante!");
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
