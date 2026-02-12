@@ -1,0 +1,46 @@
+public class Desafio5 : MonoBehaviour
+{
+    public string nome_jogador1;
+    public string nome_jogador2;
+    public int mao_jogador1;
+    public int mao_jogador2;
+
+    public bool jogador1_par;
+    
+    void Start()
+    {
+        int resultado = mao_jogador1 + mao_jogador2;
+
+    if(resultado % 2 == 0)
+        {
+            if(jogador1_par == true)
+            {
+                Debug.Log(resultado + "é um numero par então " + nome_jogador1 + "ganhou!!");
+            }
+            else
+            {
+                Debug.Log(resultado + "é um numero par então " + nome_jogador2 + "ganhou!!");
+            }
+        }
+        else
+        {
+           if(jogador1_par == true)
+            {
+                Debug.Log(resultado + "é um numero impar então " + nome_jogador2 + "ganhou!!");
+            }
+            else
+            {
+                Debug.Log(resultado + "é um numero impar então " + nome_jogador1 + "ganhou!!");
+            }
+        }
+        
+        
+    }
+    
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
