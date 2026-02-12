@@ -1,0 +1,56 @@
+using UnityEngine;
+
+public class Desafio7 : MonoBehaviour
+{
+   int recursos = 0;
+   int recursoporclick = 1;
+
+     public void ClickME()
+    {
+       recursos += recursoporclick;
+       int click = recursos;
+       
+       Debug.Log("Você tem " + click + " clicks.");
+    }
+     
+     public void Upgrade1()
+    {
+        if(recursos >= 30)
+        {
+            recursos -= 30;
+             
+            recursoporclick = 3;
+
+            Debug.Log("Parabens você comprou o primeiro upgrade!!");
+
+        
+        }else{
+            Debug.Log("Você não tem clicks suficientes");
+        }
+    }
+    public void Upgrade2(){
+         if(recursos >= 100)
+        {
+            recursos -= 100;
+             
+            recursoporclick = 5;
+
+            Debug.Log("Parabens você comprou o segundo upgrade!!");
+
+        
+        }else{
+            Debug.Log("Você não tem clicks suficientes");
+        }
+    }
+
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
